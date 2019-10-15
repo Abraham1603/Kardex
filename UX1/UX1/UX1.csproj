@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88AFF313-D751-4624-BEF6-867319B792D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UX1</RootNamespace>
+    <AssemblyName>UX1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alumnocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnocs.Designer.cs">
+      <DependentUpon>Alumnocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBajaCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBajaCarrera.designer.cs">
+      <DependentUpon>frmBajaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaCarrera.designer.cs">
+      <DependentUpon>frmConsultaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificaCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificaCarrera.designer.cs">
+      <DependentUpon>frmModificaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layers\BL.cs" />
+    <Compile Include="Calificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calificacion.Designer.cs">
+      <DependentUpon>Calificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrera.Designer.cs">
+      <DependentUpon>Carrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarreraMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarreraMateria.Designer.cs">
+      <DependentUpon>CarreraMateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layers\DAL.cs" />
+    <Compile Include="Layers\dbConn.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\..\Documents\Plantilla.cs">
+      <SubType>Form</SubType>
+      <Link>Plantilla.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Documents\Plantilla.Designer.cs">
+      <DependentUpon>Plantilla.cs</DependentUpon>
+      <Link>Plantilla.Designer.cs</Link>
+    </Compile>
+    <Compile Include="frmAltaCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaCarrera.designer.cs">
+      <DependentUpon>frmAltaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaPeriodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaPeriodo.designer.cs">
+      <DependentUpon>frmAltaPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maestro.Designer.cs">
+      <DependentUpon>Maestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materia.Designer.cs">
+      <DependentUpon>Materia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MateriaAlumnoMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MateriaAlumnoMaestro.Designer.cs">
+      <DependentUpon>MateriaAlumnoMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periodo.Designer.cs">
+      <DependentUpon>Periodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Alumnocs.resx">
+      <DependentUpon>Alumnocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calificacion.resx">
+      <DependentUpon>Calificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carrera.resx">
+      <DependentUpon>Carrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarreraMateria.resx">
+      <DependentUpon>CarreraMateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\Documents\Plantilla.resx">
+      <DependentUpon>Plantilla.cs</DependentUpon>
+      <Link>Plantilla.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaCarrera.resx">
+      <DependentUpon>frmAltaCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaPeriodo.resx">
+      <DependentUpon>frmAltaPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBajaCarrera.resx">
+      <DependentUpon>frmBajaCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaCarrera.resx">
+      <DependentUpon>frmConsultaCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificaCarrera.resx">
+      <DependentUpon>frmModificaCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maestro.resx">
+      <DependentUpon>Maestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materia.resx">
+      <DependentUpon>Materia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MateriaAlumnoMaestro.resx">
+      <DependentUpon>MateriaAlumnoMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periodo.resx">
+      <DependentUpon>Periodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TINDER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1828439.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradients-for-photoshop-background-ui-messenger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburger_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_close_309090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-1-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-Minus-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edu-teacher-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANIMAL.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
