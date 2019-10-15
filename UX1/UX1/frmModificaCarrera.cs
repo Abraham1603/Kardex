@@ -40,7 +40,7 @@ namespace Kardex
             DateTime fechaalta = Convert.ToDateTime(dtpFechaAlta.Value.ToShortDateString());
             DateTime fechabaja = Convert.ToDateTime(dtpFechaBaja.Value.ToShortDateString());
             bool estatus;
-            if(cbEstatus.SelectedText == "Activo")
+            if(cbEstatus.SelectedIndex == 0)
             {
                 estatus = true;
             }

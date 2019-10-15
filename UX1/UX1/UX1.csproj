@@ -52,11 +52,23 @@
     <Compile Include="Alumnocs.Designer.cs">
       <DependentUpon>Alumnocs.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAltaMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaMateria.Designer.cs">
+      <DependentUpon>frmAltaMateria.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBajaCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBajaCarrera.designer.cs">
       <DependentUpon>frmBajaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBajaMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBajaMateria.Designer.cs">
+      <DependentUpon>frmBajaMateria.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConsultaCarrera.cs">
       <SubType>Form</SubType>
@@ -64,11 +76,23 @@
     <Compile Include="frmConsultaCarrera.designer.cs">
       <DependentUpon>frmConsultaCarrera.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMateria.Designer.cs">
+      <DependentUpon>frmConsultaMateria.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmModificaCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmModificaCarrera.designer.cs">
       <DependentUpon>frmModificaCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificaMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificaMateria.Designer.cs">
+      <DependentUpon>frmModificaMateria.cs</DependentUpon>
     </Compile>
     <Compile Include="Layers\BL.cs" />
     <Compile Include="Calificacion.cs">
@@ -171,17 +195,29 @@
     <EmbeddedResource Include="frmAltaCarrera.resx">
       <DependentUpon>frmAltaCarrera.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaMateria.resx">
+      <DependentUpon>frmAltaMateria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAltaPeriodo.resx">
       <DependentUpon>frmAltaPeriodo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBajaCarrera.resx">
       <DependentUpon>frmBajaCarrera.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBajaMateria.resx">
+      <DependentUpon>frmBajaMateria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaCarrera.resx">
       <DependentUpon>frmConsultaCarrera.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMateria.resx">
+      <DependentUpon>frmConsultaMateria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmModificaCarrera.resx">
       <DependentUpon>frmModificaCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificaMateria.resx">
+      <DependentUpon>frmModificaMateria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

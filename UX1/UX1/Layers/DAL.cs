@@ -37,7 +37,7 @@ namespace Kardex.Layers
         {
             try
             {
-                string query = "ModificaCarrera" + carrera + "," + fechaalta + "," + fechabaja + "," + estatus;
+                string query = "ModificaCarrera '" + carrera + "', '" + fechaalta + "', '" + fechabaja + "', '" + estatus + "'";
                 conn.ExcQry(query);
             }
             catch(Exception ex)
@@ -85,6 +85,65 @@ namespace Kardex.Layers
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
             }
             return dt;
+        }
+
+        public void AltaMateria(string materia)
+        {
+            try
+            {
+                string query = "AltaMateria " + materia;
+                conn.ExcQry(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        public void BajaMateria(string materia)
+        {
+            try
+            {
+                string query = "BajaMateria " + materia;
+                conn.ExcQry(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        public DataTable ConsultaMateria(string materia)
+        {
+            string query;
+            DataTable dt = new DataTable();
+            try
+            {
+                //Le asignamos a query el valor del SP "nombre" mas el parametro materia
+                //Para ejecutarlo posteriormente.
+                query = "ConsultaMateria " + materia;
+                dt = conn.ExcQryDt(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
+
+            return dt;
+        }
+
+        public void ModificaMateria(string materia, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            try
+            {
+
+                string query = "ModificaMateria '" + materia + "', '" + fechaalta + "', '" + fechabaja + "', '" + Convert.ToInt32(estatus) + "'";
+                conn.ExcQry(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK);
+            }
         }
 
     }

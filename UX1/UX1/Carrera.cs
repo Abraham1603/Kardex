@@ -28,7 +28,8 @@ namespace UX1
 
         private void btnAltaCarrera_Click(object sender, EventArgs e)
         {
-
+            AbrirFormInPanel(new frmAltaCarrera());
+            /*
             if (frmaltacarr == null || frmaltacarr.IsDisposed)
             {
                 frmaltacarr = new frmAltaCarrera();
@@ -41,7 +42,7 @@ namespace UX1
             }
             //frmAltaCarrera FAC = new frmAltaCarrera();
             //FAC.Show();
-            
+            */
         }
 
         private void BtnBajaCarrera_Click(object sender, EventArgs e)
@@ -60,6 +61,20 @@ namespace UX1
         {
             frmModificaCarrera FMC = new frmModificaCarrera();
             FMC.Show();
+        }
+
+        private void AbrirFormInPanel(object Formhijo)
+        {
+            
+            if (this.PanelContenedor.Controls.Count > 0)
+                this.PanelContenedor.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.PanelContenedor.Controls.Add(fh);
+
+            this.PanelContenedor.Tag = fh;
+            fh.Show();
         }
     }
 }

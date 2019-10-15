@@ -21,5 +21,23 @@ namespace UX1
         {
 
         }
+
+        private void BtnAltaMaestro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AbrirFormInPanel(object Formhijo)
+        {
+            if (this.PanelContenedor.Controls.Count > 0)
+                this.PanelContenedor.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.PanelContenedor.Controls.Add(fh);
+
+            this.PanelContenedor.Tag = fh;
+            fh.Show();
+        }
     }
 }

@@ -34,6 +34,7 @@
             this.btnConMaestro = new System.Windows.Forms.Button();
             this.btnBajaMaestro = new System.Windows.Forms.Button();
             this.btnAltaMaestro = new System.Windows.Forms.Button();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lblMaestro
@@ -68,10 +69,10 @@
             this.btnModificacionMaestro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificacionMaestro.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnModificacionMaestro.ForeColor = System.Drawing.Color.White;
-            this.btnModificacionMaestro.Location = new System.Drawing.Point(537, 292);
+            this.btnModificacionMaestro.Location = new System.Drawing.Point(929, 452);
             this.btnModificacionMaestro.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificacionMaestro.Name = "btnModificacionMaestro";
-            this.btnModificacionMaestro.Size = new System.Drawing.Size(337, 240);
+            this.btnModificacionMaestro.Size = new System.Drawing.Size(102, 80);
             this.btnModificacionMaestro.TabIndex = 10;
             this.btnModificacionMaestro.Text = "Modificacion";
             this.btnModificacionMaestro.UseVisualStyleBackColor = false;
@@ -85,10 +86,10 @@
             this.btnConMaestro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConMaestro.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnConMaestro.ForeColor = System.Drawing.Color.White;
-            this.btnConMaestro.Location = new System.Drawing.Point(192, 292);
+            this.btnConMaestro.Location = new System.Drawing.Point(13, 461);
             this.btnConMaestro.Margin = new System.Windows.Forms.Padding(4);
             this.btnConMaestro.Name = "btnConMaestro";
-            this.btnConMaestro.Size = new System.Drawing.Size(337, 240);
+            this.btnConMaestro.Size = new System.Drawing.Size(105, 80);
             this.btnConMaestro.TabIndex = 9;
             this.btnConMaestro.Text = "Consulta";
             this.btnConMaestro.UseVisualStyleBackColor = false;
@@ -102,10 +103,10 @@
             this.btnBajaMaestro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBajaMaestro.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnBajaMaestro.ForeColor = System.Drawing.Color.White;
-            this.btnBajaMaestro.Location = new System.Drawing.Point(537, 44);
+            this.btnBajaMaestro.Location = new System.Drawing.Point(959, 23);
             this.btnBajaMaestro.Margin = new System.Windows.Forms.Padding(4);
             this.btnBajaMaestro.Name = "btnBajaMaestro";
-            this.btnBajaMaestro.Size = new System.Drawing.Size(337, 240);
+            this.btnBajaMaestro.Size = new System.Drawing.Size(95, 86);
             this.btnBajaMaestro.TabIndex = 8;
             this.btnBajaMaestro.Text = "Baja";
             this.btnBajaMaestro.UseVisualStyleBackColor = false;
@@ -119,13 +120,23 @@
             this.btnAltaMaestro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAltaMaestro.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnAltaMaestro.ForeColor = System.Drawing.Color.White;
-            this.btnAltaMaestro.Location = new System.Drawing.Point(192, 44);
+            this.btnAltaMaestro.Location = new System.Drawing.Point(13, 11);
             this.btnAltaMaestro.Margin = new System.Windows.Forms.Padding(4);
             this.btnAltaMaestro.Name = "btnAltaMaestro";
-            this.btnAltaMaestro.Size = new System.Drawing.Size(337, 240);
+            this.btnAltaMaestro.Size = new System.Drawing.Size(112, 85);
             this.btnAltaMaestro.TabIndex = 7;
             this.btnAltaMaestro.Text = "Alta";
             this.btnAltaMaestro.UseVisualStyleBackColor = false;
+            this.btnAltaMaestro.Click += new System.EventHandler(this.BtnAltaMaestro_Click);
+            // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.PanelContenedor.Location = new System.Drawing.Point(173, 73);
+            this.PanelContenedor.Margin = new System.Windows.Forms.Padding(4);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(719, 468);
+            this.PanelContenedor.TabIndex = 11;
             // 
             // Maestro
             // 
@@ -133,6 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(68)))), ((int)(((byte)(96)))));
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.btnModificacionMaestro);
             this.Controls.Add(this.btnConMaestro);
             this.Controls.Add(this.btnBajaMaestro);
@@ -140,7 +152,7 @@
             this.Controls.Add(this.lblCerrar);
             this.Controls.Add(this.lblMaestro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Maestro";
             this.Text = "Maestro";
             this.Load += new System.EventHandler(this.Maestro_Load);
@@ -156,5 +168,6 @@
         private System.Windows.Forms.Button btnConMaestro;
         private System.Windows.Forms.Button btnBajaMaestro;
         private System.Windows.Forms.Button btnAltaMaestro;
+        private System.Windows.Forms.Panel PanelContenedor;
     }
 }

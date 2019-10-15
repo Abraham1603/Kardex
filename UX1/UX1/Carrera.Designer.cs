@@ -34,6 +34,7 @@
             this.btnBajaCarrera = new System.Windows.Forms.Button();
             this.btnModificacionCarrera = new System.Windows.Forms.Button();
             this.btnConsultaCarrera = new System.Windows.Forms.Button();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -56,10 +57,10 @@
             this.btnAltaCarrera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAltaCarrera.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnAltaCarrera.ForeColor = System.Drawing.Color.White;
-            this.btnAltaCarrera.Location = new System.Drawing.Point(177, 66);
+            this.btnAltaCarrera.Location = new System.Drawing.Point(13, 22);
             this.btnAltaCarrera.Margin = new System.Windows.Forms.Padding(4);
             this.btnAltaCarrera.Name = "btnAltaCarrera";
-            this.btnAltaCarrera.Size = new System.Drawing.Size(337, 240);
+            this.btnAltaCarrera.Size = new System.Drawing.Size(109, 81);
             this.btnAltaCarrera.TabIndex = 1;
             this.btnAltaCarrera.Text = "Alta";
             this.btnAltaCarrera.UseVisualStyleBackColor = false;
@@ -87,10 +88,10 @@
             this.btnBajaCarrera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBajaCarrera.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnBajaCarrera.ForeColor = System.Drawing.Color.White;
-            this.btnBajaCarrera.Location = new System.Drawing.Point(522, 66);
+            this.btnBajaCarrera.Location = new System.Drawing.Point(963, 46);
             this.btnBajaCarrera.Margin = new System.Windows.Forms.Padding(4);
             this.btnBajaCarrera.Name = "btnBajaCarrera";
-            this.btnBajaCarrera.Size = new System.Drawing.Size(337, 240);
+            this.btnBajaCarrera.Size = new System.Drawing.Size(73, 66);
             this.btnBajaCarrera.TabIndex = 3;
             this.btnBajaCarrera.Text = "Baja";
             this.btnBajaCarrera.UseVisualStyleBackColor = false;
@@ -105,10 +106,10 @@
             this.btnModificacionCarrera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificacionCarrera.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnModificacionCarrera.ForeColor = System.Drawing.Color.White;
-            this.btnModificacionCarrera.Location = new System.Drawing.Point(522, 314);
+            this.btnModificacionCarrera.Location = new System.Drawing.Point(962, 172);
             this.btnModificacionCarrera.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificacionCarrera.Name = "btnModificacionCarrera";
-            this.btnModificacionCarrera.Size = new System.Drawing.Size(337, 240);
+            this.btnModificacionCarrera.Size = new System.Drawing.Size(92, 67);
             this.btnModificacionCarrera.TabIndex = 5;
             this.btnModificacionCarrera.Text = "Modificacion";
             this.btnModificacionCarrera.UseVisualStyleBackColor = false;
@@ -123,14 +124,23 @@
             this.btnConsultaCarrera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultaCarrera.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnConsultaCarrera.ForeColor = System.Drawing.Color.White;
-            this.btnConsultaCarrera.Location = new System.Drawing.Point(177, 314);
+            this.btnConsultaCarrera.Location = new System.Drawing.Point(24, 288);
             this.btnConsultaCarrera.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultaCarrera.Name = "btnConsultaCarrera";
-            this.btnConsultaCarrera.Size = new System.Drawing.Size(337, 240);
+            this.btnConsultaCarrera.Size = new System.Drawing.Size(75, 49);
             this.btnConsultaCarrera.TabIndex = 4;
             this.btnConsultaCarrera.Text = "Consulta";
             this.btnConsultaCarrera.UseVisualStyleBackColor = false;
             this.btnConsultaCarrera.Click += new System.EventHandler(this.BtnConsultaCarrera_Click);
+            // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.PanelContenedor.Location = new System.Drawing.Point(174, 88);
+            this.PanelContenedor.Margin = new System.Windows.Forms.Padding(4);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(719, 468);
+            this.PanelContenedor.TabIndex = 7;
             // 
             // Carrera
             // 
@@ -138,6 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(68)))), ((int)(((byte)(96)))));
             this.ClientSize = new System.Drawing.Size(1067, 569);
+            this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.btnModificacionCarrera);
             this.Controls.Add(this.btnConsultaCarrera);
             this.Controls.Add(this.btnBajaCarrera);
@@ -145,7 +156,6 @@
             this.Controls.Add(this.btnAltaCarrera);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Carrera";
             this.Text = "Carrera";
@@ -162,5 +172,6 @@
         private System.Windows.Forms.Button btnBajaCarrera;
         private System.Windows.Forms.Button btnModificacionCarrera;
         private System.Windows.Forms.Button btnConsultaCarrera;
+        private System.Windows.Forms.Panel PanelContenedor;
     }
 }

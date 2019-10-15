@@ -42,7 +42,7 @@ namespace Kardex.Layers
             {
                 if (fechaalta > DateTime.Now)
                 {
-                    MessageBox.Show("La decha de alta no puede ser mayor al dia de hoy", "Alerta", MessageBoxButtons.OK);
+                    MessageBox.Show("La fecha de alta no puede ser mayor al dia de hoy", "Alerta", MessageBoxButtons.OK);
                 }
                 else
                 {
@@ -97,11 +97,72 @@ namespace Kardex.Layers
         }
 
         //MATERIA
-        public void AltaMateria(string carrera, DateTime fechaalta, bool estatus)
+        public void AltaMateria(string materia)
         {
-            if (carrera == "")
+            if (materia == "")
             {
-                MessageBox.Show("Es necesario especificar el nombre de la carrera", "Alerta", MessageBoxButtons.OK);
+                MessageBox.Show("Es necesario especificar el nombre de la Materia", "Alerta", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+                /*if (fechaalta > DateTime.Now)
+                {
+                    MessageBox.Show("La fecha de alta no puede ser mayor al dia de hoy", "Alerta", MessageBoxButtons.OK);
+
+                }
+                else
+                {*/
+                    dal.AltaMateria(materia);
+                    MessageBox.Show("La materia se dio de alta correctamente", "Aviso", MessageBoxButtons.OK);
+                //}
+            }
+        }
+
+        public void BajaMateria(string materia)
+        {
+            if (materia == "")
+            {
+                MessageBox.Show("Es necesario especificar el nombre de la Materia", "Alerta", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+                /*if (fechaalta > DateTime.Now)
+                {
+                    MessageBox.Show("La fecha de alta no puede ser mayor al dia de hoy", "Alerta", MessageBoxButtons.OK);
+
+                }
+                else
+                {*/
+                dal.BajaMateria(materia);
+                MessageBox.Show("La materia se dio de baja correctamente", "Aviso", MessageBoxButtons.OK);
+                //}
+            }
+        }
+
+        public DataTable ConsultaMateria(string materia)
+        {
+
+            if (materia != "")
+            {
+
+                return dal.ConsultaMateria(materia);
+            }
+            else
+            {
+                MessageBox.Show("Es necesario especificar el valor para la materia.", "Alerta", MessageBoxButtons.OK);
+                return null;
+            }
+
+
+        }
+
+        public void ModificaMateria(string materia, DateTime fechaalta, DateTime fechabaja, bool estatus)
+        {
+            if (materia == "")
+            {
+                MessageBox.Show("Favor de especificar la materia a modificar", "Alerta", MessageBoxButtons.OK);
 
             }
             else
@@ -109,12 +170,18 @@ namespace Kardex.Layers
                 if (fechaalta > DateTime.Now)
                 {
                     MessageBox.Show("La fecha de alta no puede ser mayor al dia de hoy", "Alerta", MessageBoxButtons.OK);
-
                 }
                 else
                 {
-                    dal.AltaCarrera(carrera, fechaalta, estatus);
-                    MessageBox.Show("La carrera se dio de alta correctamente", "Aviso", MessageBoxButtons.OK);
+                    if (fechabaja > DateTime.Now)
+                    {
+                        MessageBox.Show("La fecha de baja no puede ser mayor al dia de hoy", "Alerta", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        dal.ModificaMateria(materia, fechaalta, fechabaja, estatus);
+                        MessageBox.Show("La materia se modifico exitosamente", "Aviso", MessageBoxButtons.OK);
+                    }
                 }
             }
         }

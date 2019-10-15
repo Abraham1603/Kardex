@@ -20,7 +20,6 @@ C:\Users\AngelDZJZ\source\repos\UX1\UX1\obj\Debug\UX1.MateriaAlumnoMaestro.resou
 C:\Users\machi\source\repos\UX1\UX1\bin\Debug\UX1.exe.config
 C:\Users\machi\source\repos\UX1\UX1\bin\Debug\UX1.exe
 C:\Users\machi\source\repos\UX1\UX1\bin\Debug\UX1.pdb
-C:\Users\machi\source\repos\UX1\UX1\obj\Debug\UX1.csprojAssemblyReference.cache
 C:\Users\machi\source\repos\UX1\UX1\obj\Debug\UX1.Alumnocs.resources
 C:\Users\machi\source\repos\UX1\UX1\obj\Debug\UX1.Calificacion.resources
 C:\Users\machi\source\repos\UX1\UX1\obj\Debug\UX1.Carrera.resources
@@ -42,3 +41,7 @@ C:\Users\machi\source\repos\UX1\UX1\obj\Debug\Kardex.frmBajaCarrera.resources
 C:\Users\machi\source\repos\UX1\UX1\obj\Debug\Kardex.frmConsultaCarrera.resources
 C:\Users\machi\source\repos\UX1\UX1\obj\Debug\Kardex.frmModificaCarrera.resources
 C:\Users\machi\source\repos\UX1\UX1\obj\Debug\Kardex.Login.resources
+C:\Users\machi\source\repos\UX1\UX1\obj\Debug\UX1.frmAltaMateria.resources
+C:\Users\machi\source\repos\UX1\UX1\obj\Debug\UX1.frmBajaMateria.resources
+C:\Users\machi\source\repos\UX1\UX1\obj\Debug\UX1.frmConsultaMateria.resources
+C:\Users\machi\source\repos\UX1\UX1\obj\Debug\UX1.frmModificaMateria.resources

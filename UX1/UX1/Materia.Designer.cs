@@ -34,6 +34,7 @@
             this.btnConsultaMateria = new System.Windows.Forms.Button();
             this.btnBajaMateria = new System.Windows.Forms.Button();
             this.btnAltaMateria = new System.Windows.Forms.Button();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -68,13 +69,14 @@
             this.btnModificacionMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificacionMateria.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnModificacionMateria.ForeColor = System.Drawing.Color.White;
-            this.btnModificacionMateria.Location = new System.Drawing.Point(537, 306);
+            this.btnModificacionMateria.Location = new System.Drawing.Point(926, 447);
             this.btnModificacionMateria.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificacionMateria.Name = "btnModificacionMateria";
-            this.btnModificacionMateria.Size = new System.Drawing.Size(337, 240);
+            this.btnModificacionMateria.Size = new System.Drawing.Size(106, 94);
             this.btnModificacionMateria.TabIndex = 9;
             this.btnModificacionMateria.Text = "Modificacion";
             this.btnModificacionMateria.UseVisualStyleBackColor = false;
+            this.btnModificacionMateria.Click += new System.EventHandler(this.BtnModificacionMateria_Click);
             // 
             // btnConsultaMateria
             // 
@@ -85,13 +87,14 @@
             this.btnConsultaMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultaMateria.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnConsultaMateria.ForeColor = System.Drawing.Color.White;
-            this.btnConsultaMateria.Location = new System.Drawing.Point(192, 306);
+            this.btnConsultaMateria.Location = new System.Drawing.Point(34, 435);
             this.btnConsultaMateria.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultaMateria.Name = "btnConsultaMateria";
-            this.btnConsultaMateria.Size = new System.Drawing.Size(337, 240);
+            this.btnConsultaMateria.Size = new System.Drawing.Size(96, 89);
             this.btnConsultaMateria.TabIndex = 8;
             this.btnConsultaMateria.Text = "Consulta";
             this.btnConsultaMateria.UseVisualStyleBackColor = false;
+            this.btnConsultaMateria.Click += new System.EventHandler(this.BtnConsultaMateria_Click);
             // 
             // btnBajaMateria
             // 
@@ -102,13 +105,14 @@
             this.btnBajaMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBajaMateria.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnBajaMateria.ForeColor = System.Drawing.Color.White;
-            this.btnBajaMateria.Location = new System.Drawing.Point(537, 58);
+            this.btnBajaMateria.Location = new System.Drawing.Point(956, 11);
             this.btnBajaMateria.Margin = new System.Windows.Forms.Padding(4);
             this.btnBajaMateria.Name = "btnBajaMateria";
-            this.btnBajaMateria.Size = new System.Drawing.Size(337, 240);
+            this.btnBajaMateria.Size = new System.Drawing.Size(92, 74);
             this.btnBajaMateria.TabIndex = 7;
             this.btnBajaMateria.Text = "Baja";
             this.btnBajaMateria.UseVisualStyleBackColor = false;
+            this.btnBajaMateria.Click += new System.EventHandler(this.BtnBajaMateria_Click);
             // 
             // btnAltaMateria
             // 
@@ -119,13 +123,23 @@
             this.btnAltaMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAltaMateria.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnAltaMateria.ForeColor = System.Drawing.Color.White;
-            this.btnAltaMateria.Location = new System.Drawing.Point(192, 58);
+            this.btnAltaMateria.Location = new System.Drawing.Point(13, 8);
             this.btnAltaMateria.Margin = new System.Windows.Forms.Padding(4);
             this.btnAltaMateria.Name = "btnAltaMateria";
-            this.btnAltaMateria.Size = new System.Drawing.Size(337, 240);
+            this.btnAltaMateria.Size = new System.Drawing.Size(91, 69);
             this.btnAltaMateria.TabIndex = 6;
             this.btnAltaMateria.Text = "Alta";
             this.btnAltaMateria.UseVisualStyleBackColor = false;
+            this.btnAltaMateria.Click += new System.EventHandler(this.BtnAltaMateria_Click);
+            // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.PanelContenedor.Location = new System.Drawing.Point(173, 73);
+            this.PanelContenedor.Margin = new System.Windows.Forms.Padding(4);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(719, 468);
+            this.PanelContenedor.TabIndex = 10;
             // 
             // Materia
             // 
@@ -133,6 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(68)))), ((int)(((byte)(96)))));
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.btnModificacionMateria);
             this.Controls.Add(this.btnConsultaMateria);
             this.Controls.Add(this.btnBajaMateria);
@@ -140,7 +155,7 @@
             this.Controls.Add(this.lblCerrar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Materia";
             this.Text = "Materia";
             this.ResumeLayout(false);
@@ -155,5 +170,6 @@
         private System.Windows.Forms.Button btnConsultaMateria;
         private System.Windows.Forms.Button btnBajaMateria;
         private System.Windows.Forms.Button btnAltaMateria;
+        private System.Windows.Forms.Panel PanelContenedor;
     }
 }
